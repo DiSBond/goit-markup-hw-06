@@ -166,7 +166,6 @@ a {
   fill: currentColor;
   vertical-align: middle;
 }
-
 /* ------------------HERO-------------------- */
 .main-first-section {
   background-image: linear-gradient(
@@ -865,7 +864,7 @@ a {
   letter-spacing: 0.03em;
 }
 .modal-checkbox {
-  visibility: hidden;
+  /* visibility: hidden; */
   position: absolute;
   width: 1px;
   height: 1px;
@@ -878,6 +877,9 @@ a {
 .modal-checkbox:checked + .modal-checkbox-icon {
   border: var(--accent-color);
   background-color: var(--accent-color);
+}
+.modal-checkbox:focus + .modal-checkbox-icon {
+  border: 1px solid var(--accent-color);
 }
 /* background-origin: border-box;
   background-size: 11px;
