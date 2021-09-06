@@ -463,16 +463,16 @@ a {
   margin-left: 93px;
 }
 .footer-label {
-  margin-right: 100%;
 }
 .third-footer-container input {
+  display: inline-block;
   margin-top: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2f303a;
-  width: 384px;
+  width: 358px;
   height: 50px;
   padding-left: 16px;
   outline: none;
@@ -581,6 +581,7 @@ a {
   background-color: var(--accent-color);
 }
 .footer-button {
+  display: inline-block;
   font-family: inherit;
   padding: 10px 28px 10px 29px;
   font-weight: 700;
@@ -875,6 +876,9 @@ a {
   overflow: hidden;
 }
 .modal-checkbox:checked + .modal-checkbox-icon {
+  background-image: url(../image/icon\ check.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
   border: var(--accent-color);
   background-color: var(--accent-color);
 }
@@ -882,16 +886,16 @@ a {
   border: 1px solid var(--accent-color);
 }
 /* background-origin: border-box;
-  background-size: 11px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; */
-.modal-svg-icon {
+/* .modal-svg-icon {
   position: absolute;
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
   pointer-events: none;
-}
+} */
 .textarea {
   padding: 12px 16px;
   height: 120px;
